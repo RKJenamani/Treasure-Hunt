@@ -23,7 +23,7 @@ Import the code and create a class object say obj (Blackbox obj;) and use the fo
 -> move_2(int): to move turtle2. Same mapping.\
 -> get_turtle_pos1(): returns a pair of integers for turtle1 positions.\
 -> get_turtle_pos2(): returns a pair of integers for turtle2 positions.\
-check_status(int x, int y): returns the status of corresponding cell. (-1: invalid call, 0: not a resource, 1: resource).
+-> check_status(int x, int y): returns the status of corresponding cell. (-1: invalid call, 0: not a resource, 1: resource).
 
 ### Important Instructions:
 

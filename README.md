@@ -27,9 +27,9 @@ Import the code and create a class object say obj (Blackbox obj;) and use the fo
 
 ### Important Instructions:
 
-1.The above movement is just to update the positions in blackbox. Make sure to display the movements in turtlesim using ros messages.\
-2.Get the header file and shared object file for the blackbox from this [link](https://drive.google.com/drive/folders/1Ky_dTvCQnW8TIkmUbL1RVwj98w7f2RYg)\
-3.To compile and link your code: include the above mentioned header file in your source code and while compiling run the following command:\
+1. The above movement is just to update the positions in blackbox. Make sure to display the movements in turtlesim using ros messages.\
+2. Get the header file and shared object file for the blackbox from this [link](https://drive.google.com/drive/folders/1Ky_dTvCQnW8TIkmUbL1RVwj98w7f2RYg)\
+3. To compile and link your code: include the above mentioned header file in your source code and while compiling run the following command:\
 g++ your_file.cpp -L/path/to/\
 folder/of/shared/object/file -ltask\
 4. For linking the .so file: put the .so and your program (check.cpp here) in the same folder, then add the path to that folder in LD_LIBRARY_PATH.\

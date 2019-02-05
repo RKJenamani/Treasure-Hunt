@@ -4,7 +4,8 @@
 
 You are given an mXn grid with a resource in any one of the cells. You need to collect the resource using two agents ( use ROS turtlesim simulator ). Once a resource is exhausted it automatically generates another resource at any other random point. Repeat the same procedure again and again.
 
-You are given a black-box that returns the following parameters on function call:\
+You are given a black-box that returns the following parameters on function call:
+
 -> No of rows and columns in the grid.\
 -> 0 or 1 depending on the status of the cell ( if it contains resource or not ).\
 You can only ping for neighbouring nodes. Eg. if an agent is at (2,2) it can only check the status of neighbouring 4 cells. ( (1,2), (2,1), (2,3),  (3,2) ). It returns -1 for invalid calls.\
@@ -14,13 +15,14 @@ For better judgement : What about a fix set of resources and collecting them in 
 
 ### BlackBox Description:
 
-Import the code and create a class object say obj (Blackbox obj;) and use the following functions.\
-get_rows(): returns no of rows\
-get_cols(): returns no of cols\
-move_1(int): to move turtle1. (0,1,2,3) = (up, down, left, right)\
-move_2(int): to move turtle2. Same mapping.\
-get_turtle_pos1(): returns a pair of integers for turtle1 positions.\
-get_turtle_pos2(): returns a pair of integers for turtle2 positions.\
+Import the code and create a class object say obj (Blackbox obj;) and use the following functions.
+
+-> get_rows(): returns no of rows\
+-> get_cols(): returns no of cols\
+-> move_1(int): to move turtle1. (0,1,2,3) = (up, down, left, right)\
+-> move_2(int): to move turtle2. Same mapping.\
+-> get_turtle_pos1(): returns a pair of integers for turtle1 positions.\
+-> get_turtle_pos2(): returns a pair of integers for turtle2 positions.\
 check_status(int x, int y): returns the status of corresponding cell. (-1: invalid call, 0: not a resource, 1: resource).
 
 ### Important Instructions:

@@ -12,7 +12,7 @@ You can only ping for neighbouring nodes. Eg. if an agent is at (2,2) it can onl
 -> Once a resource is selected, it shall be guaranteed that the next resource is not present in a 3x3 grid, centered at the previous resource.\
 For better judgement : What about a fix set of resources and collecting them in minimum number of steps? Count will be maintained by black box.
 
-BlackBox Description:
+### BlackBox Description:
 
 Import the code and create a class object say obj (Blackbox obj;) and use the following functions.\
 get_rows(): returns no of rows\
@@ -23,10 +23,11 @@ get_turtle_pos1(): returns a pair of integers for turtle1 positions.\
 get_turtle_pos2(): returns a pair of integers for turtle2 positions.\
 check_status(int x, int y): returns the status of corresponding cell. (-1: invalid call, 0: not a resource, 1: resource).
 
-Important Instructions:
-The above movement is just to update the positions in blackbox. Make sure to display the movements in turtlesim using ros messages.\
-Get the header file and shared object file for the blackbox from this link\
-To compile and link your code: include the above mentioned header file in your source code and while compiling run the following command:\
+### Important Instructions:
+
+1.The above movement is just to update the positions in blackbox. Make sure to display the movements in turtlesim using ros messages.\
+2.Get the header file and shared object file for the blackbox from this [link](https://drive.google.com/drive/folders/1Ky_dTvCQnW8TIkmUbL1RVwj98w7f2RYg)\
+3.To compile and link your code: include the above mentioned header file in your source code and while compiling run the following command:\
 g++ your_file.cpp -L/path/to/\
 folder/of/shared/object/file -ltask\
 4. For linking the .so file: put the .so and your program (check.cpp here) in the same folder, then add the path to that folder in LD_LIBRARY_PATH.\
